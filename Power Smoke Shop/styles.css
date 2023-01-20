@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid green; */
+    font-family: 'Chicle';
+    -webkit-text-stroke: 1.10px black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    /* background-image: url("./jester.jpg"); */
+}
+
+
+/* Set the container to be full height of the screen */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: rgb(247, 210, 0);
+}
+
+.left {
+    background-color: blue;
+}
+
+
+#name {
+    font-family: "Chicle", "Helvetica", sans-serif;
+    font-size: 4rem;
+}
+
+.black {
+    -webkit-text-stroke: 1.10px black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* .page-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+} */
+
+
+
+
+/* Media query to stack the sections on top of each other when the screen size is below 600px */
+@media screen and (max-width: 800px) {
+    .container {
+        scroll-behavior: smooth;
+        height: 200vh;
+        flex-direction: column; /* change the flex direction to stack the sections on top of each other */
+    }
+
+    .section {
+    } 
+
+    #name {
+        font-size-adjust: 1rem;
+    }
+
+    /* .page-wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    } */
+}
+  
+  

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Set the container to be full height of the screen */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Style the left section */
+.left-section {
+    flex-grow: 1;
+    flex: 1;
+    background-color: red;
+}
+
+
+/* Style the right section */
+.right-section {
+    flex-grow: 1;
+    flex: 1;
+    background-color: blue;
+}
+
+
+/* Media query to stack the sections on top of each other when the screen size is below 600px */
+@media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column; /* change the flex direction to stack the sections on top of each other */
+    }
+  }

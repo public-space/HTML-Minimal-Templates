@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+    padding: 10vw;
+    background-color: bisque;
+}
+
+#nav {
+    width: 50%;
+    float: left;
+  }
+  
+  #content {
+    width: 50%;
+    float: right;
+  }
+  
+  #nav a:hover {
+    background-color: yellow;
+  }
+
+  #content div {
+    display: none;
+  }
+  
+  .default {
+    display: block;
+  }
+  
+  
+
+  /* This template uses a div with an id of "nav" for the navigation, 
+  and a div with an id of "content" for the content. Each section of
+  content is contained within its own div with a unique id 
+  (e.g. "section1", "section2", etc.). The navigation links use the href attribute 
+  to link to the corresponding section within the "content" div.
+
+  To divide the screen down the middle, you can use CSS to set the width of 
+  the "nav" and "content" divs to 50% and float them next to each other. 
+
+  For the hover effect, you can use CSS to change the background color of the 
+  links when the user hovers over them. 
+*/
